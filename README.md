@@ -9,4 +9,9 @@ More Info [here](_numpy/_numpy.md)
 # Pandas
 Fundamentals
 
-More Info [here](pandas/pandas.md)
+More Info [here](_pandas/_pandas.md)
+
+# EDA Ekspolarcyjna analiza danych
+Fundamentals
+
+More Info [here](_Eda/_eda.md)
