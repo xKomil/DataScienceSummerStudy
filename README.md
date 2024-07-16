@@ -15,3 +15,8 @@ More Info [here](_pandas/_pandas.md)
 Fundamentals
 
 More Info [here](_EDA/_eda.md)
+
+# Data Visualization
+Fundamentals
+
+More Info [here](_data_visualization/_data_visualization)
