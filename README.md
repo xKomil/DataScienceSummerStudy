@@ -19,4 +19,4 @@ More Info [here](_EDA/_eda.md)
 # Data Visualization
 Fundamentals
 
-More Info [here](_data_visualization/_data_visualization)
+More Info [here](_data_visualization/_data_visualization.md)
