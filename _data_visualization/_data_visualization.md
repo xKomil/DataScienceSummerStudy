@@ -5,4 +5,22 @@ I will do:
 - 2. Histogram
 - 3. Box plot
 - 4. Bar plot
-- 5. Pie chart
+Also in the crash course in seaborn i did:
+1. Numerical data plotting
+- replot()
+- scatterplot()
+- lineplot()
+2. Categorical Data plotting 
+- catplot() its like scatter plot with category
+- boxplot()
+- stripplot()
+- swarmplot()
+- etc…
+3. Visualizing Distribution of the data
+- histplot()
+- kdeplot()
+- jointplot()
+- rugplot()
+4. Linear Regression and relationship
+- regplot()
+- implot()
