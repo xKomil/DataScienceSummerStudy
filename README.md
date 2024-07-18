@@ -20,3 +20,8 @@ More Info [here](_EDA/_eda.md)
 Fundamentals
 
 More Info [here](_data_visualization/_data_visualization.md)
+
+# Data cleaning
+Fundamentals
+
+More Info [here](data_cleaning/data_cleaning.md)
