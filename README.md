@@ -25,3 +25,9 @@ More Info [here](_data_visualization/_data_visualization.md)
 Fundamentals
 
 More Info [here](data_cleaning/data_cleaning.md)
+
+## ETL
+
+# Extract
+I will start with the most simple connection to working on more complicated 
+You can see progress [here](_Etl/_simple/_simple.md)

@@ -1,0 +1,1 @@
+So i started with simple connection from extracting data from excel to changing and adding one column to saving it to SQL SERVER [here](/_ETL/_simple/frm_excel_to_sql.py)
