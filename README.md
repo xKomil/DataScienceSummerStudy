@@ -35,4 +35,4 @@ You can see progress [here](_Etl/_simple/_simple.md)
 ## Machine learning 
 
 I will try to use a lots of topis from fundamentals to more complex 
-#61
+#80
