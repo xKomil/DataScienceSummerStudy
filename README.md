@@ -26,13 +26,13 @@ Fundamentals
 
 More Info [here](data_cleaning/data_cleaning.md)
 
-## ETL
+# ETL
 
-# Extract
+## Extract
 I will start with the most simple connection to working on more complicated 
 You can see progress [here](_Etl/_simple/_simple.md)
 
-## Machine learning 
+# Machine learning 
 
 I will try to use a lots of topis from fundamentals to more complex 
 #80
