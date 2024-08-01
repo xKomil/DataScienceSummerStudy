@@ -36,6 +36,6 @@ You can see progress [here](_Etl/_simple/_simple.md)
 
 I will try to use a lots of topis from fundamentals to more complex 
 - [fundamentals](_machine_learning/_fundamentals/1)
-Supervised learning:
+## Supervised learning:
 - [regression](_machine_learning/_fundamentals/2)
 - [classification](_machine_learning/_fundamentals/3)
