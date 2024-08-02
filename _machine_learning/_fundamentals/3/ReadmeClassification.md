@@ -63,7 +63,13 @@ Example: If a classifier identifies 80 out of 100 actual positives correctly but
 
 ## Precission and Recall
 
+To better evaluate classifiers, precision and recall can be combined into a single metric called the F1 score, which is the harmonic mean of precision and recall. This means the F1 score is high only if both precision and recall are high
 
+![alt text](image-3.png)
+
+The F score favors classifiers with similar precision and recall, which isn't always ideal. Sometimes precision is more important, other times it's recall. For instance, a classifier detecting kid-safe videos should prioritize high precision, even if it means low recall, to ensure only safe videos are kept. Conversely, a classifier identifying shoplifters can have low precision if it maintains high recall, ensuring most shoplifters are caught despite some false alerts. Increasing precision reduces recall and vice versa, known as the precision/recall trade-off.
+
+## The Precision/Recall Trade-off
 
 # Summary
 ## [stochastic gradient descent](https://www.geeksforgeeks.org/ml-stochastic-gradient-descent-sgd/)
@@ -81,4 +87,8 @@ This makes SGD faster and more suitable for large datasets because it can start 
 ## [StratifiedKFold](https://www.geeksforgeeks.org/stratified-k-fold-cross-validation/)
 StratifiedKFold is an enhancement to the standard k-fold cross-validation method. It ensures that each fold of the dataset used for training and testing preserves the percentage of samples for each class label, maintaining the class distribution across all folds. This is particularly useful for imbalanced datasets, where some classes are much more frequent than others.
 
-# 190
+## [Decision Function](https://www.geeksforgeeks.org/ml-decision-function/)
+Decision function is a method present in classifier{ SVC, Logistic Regression } class of sklearn machine learning framework. This method basically returns a Numpy array, In which each element represents whether a predicted sample for x_test by the classifier lies to the right or left side of the Hyperplane and also how far from the HyperPlane. It also tells us that how confidently each value predicted for x_test by the classifier is Positive ( large-magnitude Positive value ) or Negative ( large-magnitude Negative value)
+
+
+# 192
