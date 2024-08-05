@@ -70,7 +70,13 @@ To better evaluate classifiers, precision and recall can be combined into a sing
 The F score favors classifiers with similar precision and recall, which isn't always ideal. Sometimes precision is more important, other times it's recall. For instance, a classifier detecting kid-safe videos should prioritize high precision, even if it means low recall, to ensure only safe videos are kept. Conversely, a classifier identifying shoplifters can have low precision if it maintains high recall, ensuring most shoplifters are caught despite some false alerts. Increasing precision reduces recall and vice versa, known as the precision/recall trade-off.
 
 ## The Precision/Recall Trade-off
+To understand this trade-off, let’s look at how the SGDClassifier makes its classification decisions. It computes a score for each instance using a decision function. If the score exceeds a threshold, the instance is classified as positive; otherwise, it's classified as negative.
 
+Suppose the threshold is set at a certain point: on one side, there are true positives (correctly identified instances), and on the other, there are false positives (incorrectly identified instances). For example, with the threshold at a certain point, you might have 4 true positives and 1 false positive, resulting in a precision of 80% (4 out of 5) and a recall of 67% (4 out of 6).
+
+Raising the threshold can eliminate false positives (increasing precision to 100%) but may also convert true positives into false negatives, reducing recall to 50%. Lowering the threshold has the opposite effect, increasing recall but reducing precision.
+
+![alt text](image-4.png)
 # Summary
 ## [stochastic gradient descent](https://www.geeksforgeeks.org/ml-stochastic-gradient-descent-sgd/)
 
