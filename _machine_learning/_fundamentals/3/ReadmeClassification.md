@@ -76,6 +76,18 @@ Suppose the threshold is set at a certain point: on one side, there are true pos
 
 Raising the threshold can eliminate false positives (increasing precision to 100%) but may also convert true positives into false negatives, reducing recall to 50%. Lowering the threshold has the opposite effect, increasing recall but reducing precision.
 
+## The ROC Curve
+The receiver operating characteristic (ROC) curve is a common tool for binary classifiers. Unlike the precision/recall curve, the ROC curve plots the true positive rate (recall) against the false positive rate (FPR). The FPR is the ratio of negative instances incorrectly classified as positive and is equal to 1 minus the true negative rate (TNR), also known as specificity. Therefore, the ROC curve plots sensitivity (recall) versus 1 minus specificity
+
+You can plot the FPR against the TPR using Matplotlib. The following code produces the plot in Figure 3-7. To find the point that corresponds to 90% precision, we need to find the index of the desired threshold. Since thresholds are listed in decreasing order, we use <= instead of >= on the first line.
+
+One way to compare classifiers is by measuring the *area under the curve (AUC)*. A perfect classifier has a ROC AUC of 1, while a random classifier has a ROC AUC of 0.5. Scikit-Learn provides a function to estimate the ROC AUC.
+
+TIP: Since the ROC curve is similar to the precision/recall (PR) curve, you may wonder which one to use. Generally, prefer the PR curve when the positive class is rare or when false positives are more concerning than false negatives. Otherwise, use the ROC curve. For example, a high ROC AUC score might suggest a good classifier, but this could be due to a low number of positives. In contrast, the PR curve can highlight that the classifier needs improvement by showing how close it is to the top-right corner.
+
+These are estimated probabilities, not actual ones. For instance, images classified as positive with an estimated probability of 50%-60% are actually positive about 94% of the time, indicating the model's probabilities are too low. Models can also be overconfident. The sklearn.calibration package provides tools to calibrate these probabilities to better match actual probabilities. See the extra material section in this chapter’s notebook for more details.
+
+
 ![alt text](image-4.png)
 # Summary
 ## [stochastic gradient descent](https://www.geeksforgeeks.org/ml-stochastic-gradient-descent-sgd/)
@@ -96,5 +108,8 @@ StratifiedKFold is an enhancement to the standard k-fold cross-validation method
 ## [Decision Function](https://www.geeksforgeeks.org/ml-decision-function/)
 Decision function is a method present in classifier{ SVC, Logistic Regression } class of sklearn machine learning framework. This method basically returns a Numpy array, In which each element represents whether a predicted sample for x_test by the classifier lies to the right or left side of the Hyperplane and also how far from the HyperPlane. It also tells us that how confidently each value predicted for x_test by the classifier is Positive ( large-magnitude Positive value ) or Negative ( large-magnitude Negative value)
 
+## [AUC](https://www.statystyczny.pl/auc-area-under-curve-czyli-co-kryje-sie-pod-krzywa/)
 
-# 195
+The Area Under the Curve (AUC) is a metric used to evaluate the performance of a binary classifier by measuring the area under its ROC curve. It ranges from 0.5 for a random classifier to 1 for a perfect classifier.
+
+# 201
