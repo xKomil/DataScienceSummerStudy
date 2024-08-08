@@ -95,6 +95,10 @@ One-versus-the-rest (OvR): Train a binary classifier for each class, and classif
 One-versus-one (OvO): Train a binary classifier for every pair of classes. This approach requires more classifiers but is more efficient for algorithms that scale poorly with large datasets.
 Scikit-Learn automatically applies OvR or OvO depending on the algorithm used.
 
+## Error Analysis
+
+In a real project, you would follow your machine learning project checklist, exploring data preparation, testing models, fine-tuning hyperparameters, and automating processes. Here, we assume you have a promising model and want to improve it by analyzing errors. Start by examining the confusion matrix using cross_val_predict() and confusion_matrix(). With 10 classes, the matrix will be more complex and harder to interpret.
+
 ![alt text](image-4.png)
 # Summary
 ## [stochastic gradient descent](https://www.geeksforgeeks.org/ml-stochastic-gradient-descent-sgd/)
