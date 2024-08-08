@@ -119,4 +119,4 @@ Decision function is a method present in classifier{ SVC, Logistic Regression } 
 
 The Area Under the Curve (AUC) is a metric used to evaluate the performance of a binary classifier by measuring the area under its ROC curve. It ranges from 0.5 for a random classifier to 1 for a perfect classifier.
 
-# 201
+# 205
