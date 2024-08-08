@@ -87,6 +87,13 @@ TIP: Since the ROC curve is similar to the precision/recall (PR) curve, you may 
 
 These are estimated probabilities, not actual ones. For instance, images classified as positive with an estimated probability of 50%-60% are actually positive about 94% of the time, indicating the model's probabilities are too low. Models can also be overconfident. The sklearn.calibration package provides tools to calibrate these probabilities to better match actual probabilities. See the extra material section in this chapter’s notebook for more details.
 
+## Multiclass classification
+
+Binary classifiers distinguish between two classes, while multiclass classifiers can handle more than two classes. Some Scikit-Learn classifiers (e.g., LogisticRegression, RandomForestClassifier) natively support multiclass classification, while others are strictly binary (e.g., SGDClassifier, SVC). To perform multiclass classification with binary classifiers, two strategies are common:
+
+One-versus-the-rest (OvR): Train a binary classifier for each class, and classify based on which classifier gives the highest score.
+One-versus-one (OvO): Train a binary classifier for every pair of classes. This approach requires more classifiers but is more efficient for algorithms that scale poorly with large datasets.
+Scikit-Learn automatically applies OvR or OvO depending on the algorithm used.
 
 ![alt text](image-4.png)
 # Summary
